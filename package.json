@@ -1,0 +1,54 @@
+{
+  "name": "pulse-monitoring-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "browserify": {
+    "transform": [
+      "aliasify"
+    ]
+  },
+  "aliasify": {
+    "aliases": {
+      "net": "net-websocket-polyfill"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@rollup/plugin-inject": "^5.0.3",
+    "axios": "^1.4.0",
+    "buffer": "^6.0.3",
+    "chart.js": "^4.3.0",
+    "cors": "^2.8.5",
+    "d3": "^7.8.5",
+    "express": "^4.18.2",
+    "kafka-node": "^5.0.0",
+    "kafkajs": "^2.2.4",
+    "net-websocket-polyfill": "^0.1.1-r3",
+    "react": "^18.2.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "^18.2.0",
+    "rollup": "^3.25.1",
+    "socket.io": "^4.7.0",
+    "socket.io-client": "^4.7.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^11.1.1",
+    "@types/d3": "^7.4.0",
+    "@types/react": "^18.0.37",
+    "@types/react-dom": "^18.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.59.0",
+    "@typescript-eslint/parser": "^5.59.0",
+    "@vitejs/plugin-react": "^4.0.0",
+    "eslint": "^8.38.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.3.4",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.9"
+  }
+}
